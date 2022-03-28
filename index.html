@@ -2,12 +2,51 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>New HTML</title>
+    <title>U_service</title>
+    <style>
+        .two-buttons {
+            display: flex;
+            width: 30%;
+            height: 9rem;
+        }
 
+        @media screen and (max-width: 1024px) {
+            .two-buttons {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .two-buttons {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 270px) {
+            .two-buttons {
+                display: block;
+            }
+        }
+
+        .two-buttons__col {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 270px) {
+            .two-buttons__col {
+                margin: 3rem 0;
+            }
+        }
+
+        .two-buttons__button {
+            padding: 0.5rem 1.5rem;
+        }
+    </style>
 </head>
-
 <body>
-
 <div class="two-buttons">
     <div class="two-buttons__col">
         <input class="two-buttons__button" type="button" value="jQuery" id="jquery_button">
@@ -16,48 +55,7 @@
         <button class="two-buttons__button" id="axios_button">Axios</button>
     </div>
 </div>
-
-</body>
-
-<style>
-    .two-buttons {
-        display: flex;
-        width: 30%;
-        height: 9rem;
-    }
-    @media screen and (max-width: 1024px) {
-        .two-buttons {
-            width: 60%;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        .two-buttons {
-            width: 100%;
-        }
-    }
-    @media screen and (max-width: 270px) {
-        .two-buttons {
-            display: block;
-        }
-    }
-    .two-buttons__col {
-        flex-basis: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    @media screen and (max-width: 270px) {
-        .two-buttons__col {
-            margin: 3rem 0;
-        }
-    }
-    .two-buttons__button {
-        padding: 0.5rem 1.5rem;
-    }
-</style>
-
 <script src="/bower_components/jquery/dist/jquery.js"></script>
-
-<script src="/js/main.js" > </script>
-
+<script src="/js/main.js"></script>
+</body>
 </html>
