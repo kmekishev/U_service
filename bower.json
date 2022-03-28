@@ -1,0 +1,20 @@
+{
+  "name": "U_service",
+  "description": "",
+  "main": "",
+  "authors": [
+    "dimti <demidov@dimti.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kmekishev/U_service",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
